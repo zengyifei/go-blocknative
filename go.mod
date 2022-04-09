@@ -1,4 +1,4 @@
-module github.com/bonedaddy/go-blocknative
+module github.com/zengyifei/go-blocknative
 
 go 1.15
 

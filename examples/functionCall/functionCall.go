@@ -9,12 +9,12 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/bonedaddy/go-blocknative/client"
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/gorilla/websocket"
 	"github.com/joho/godotenv"
 	"github.com/oklog/run"
 	"github.com/pkg/errors"
+	"github.com/zengyifei/go-blocknative/client"
 )
 
 func main() {

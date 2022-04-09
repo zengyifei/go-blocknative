@@ -93,7 +93,7 @@ type Config struct {
 	//  valid Ethereum address or 'global'
 	Scope string `json:"scope"`
 	// A slice of valid filters (jsql: https://github.com/deitch/searchjs)
-	Filters []map[string]string `json:"filters,omitempty"`
+	Filters []map[string]interface{} `json:"filters,omitempty"`
 	// JSON abis
 	ABI []interface{} `json:"abi,omitempty"`
 	// defines whether the service should automatically watch the address as defined in
@@ -101,7 +101,7 @@ type Config struct {
 }
 
 // NewConfig returns a new config instance
-func NewConfig(scope string, watchAddress bool, abis interface{}, filters []map[string]string) Config {
+func NewConfig(scope string, watchAddress bool, abis interface{}, filters []map[string]interface{}) Config {
 	cfg := Config{
 		Scope:        scope,
 		Filters:      filters,

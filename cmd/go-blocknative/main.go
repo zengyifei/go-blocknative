@@ -4,9 +4,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/bonedaddy/go-blocknative/client"
 	"github.com/gorilla/websocket"
 	"github.com/urfave/cli/v2"
+	"github.com/zengyifei/go-blocknative/client"
 )
 
 var (
