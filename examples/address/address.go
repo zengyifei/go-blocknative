@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/bonedaddy/go-blocknative/client"
+	"github.com/zengyifei/go-blocknative/client"
 	"github.com/gorilla/websocket"
 	"github.com/joho/godotenv"
 )
