@@ -56,7 +56,7 @@ func main() {
 			"0x88dF592F8eb5D7Bd38bFeF7dEb0fBc02cf3778a0",
 			true,
 			parsed,
-			[]map[string]string{
+			[]map[string]interface{}{
 				{
 					"contractCall.methodName": "submitMiningSolution",
 				},

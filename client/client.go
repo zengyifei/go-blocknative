@@ -138,3 +138,7 @@ func (c *Client) Close() error {
 	c.cancel()
 	return err
 }
+
+func (c *Client) Conn() *websocket.Conn {
+	return c.conn
+}
