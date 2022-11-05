@@ -99,7 +99,7 @@ type Config struct {
 	//  valid Ethereum address or 'global'
 	Scope string `json:"scope"`
 	// A slice of valid filters (jsql: https://github.com/deitch/searchjs)
-	Filters []map[string]interface{} `json:"filters,omitempty"`
+	Filters []map[string]interface{} `json:"filters"`
 	// JSON abis
 	ABI []interface{} `json:"abi,omitempty"`
 	// defines whether the service should automatically watch the address as defined in
