@@ -7,11 +7,11 @@ import (
 
 // BaseMessage is the base message required for all interactions with the websockets api
 type BaseMessage struct {
-	CategoryCode string    `json:"categoryCode"`
-	EventCode    string    `json:"eventCode"`
-	Timestamp    time.Time `json:"timeStamp"`
-	DappID       string    `json:"dappId"` // api key
-	Version      string    `json:"version"`
+	CategoryCode string `json:"categoryCode"`
+	EventCode    string `json:"eventCode"`
+	Timestamp    string `json:"timeStamp"`
+	DappID       string `json:"dappId"` // api key
+	Version      string `json:"version"`
 	Blockchain   `json:"blockchain"`
 }
 
@@ -176,7 +176,7 @@ func NewBaseMessageMainnet(apiKey string) BaseMessage {
 		apiKey = os.Getenv("BLOCKNATIVE_DAPP_ID")
 	}
 	return BaseMessage{
-		Timestamp: time.Now(),
+		Timestamp: time.Now().Format("2006-01-02T15:04:05.999Z"),
 		DappID:    apiKey,
 		Version:   "v0",
 		Blockchain: Blockchain{
